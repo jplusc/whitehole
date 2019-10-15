@@ -1,0 +1,9 @@
+# Project home page: https://github.com/jplusc/whitehole
+
+# on BlackJack8's iOSAdblockList
+maxcdn.bootstrapcdn.com
+
+# blocked by a few lists, commonly need to whitelist them
+amzn.to
+t.co
+
