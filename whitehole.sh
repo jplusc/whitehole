@@ -19,7 +19,7 @@ GRAVITY_UPDATE_COMMAND="pihole -g"
 
 
 echo -e "Downloading new whitelists.... "
-rm "${PIHOLE_LOCATION}"/whitelist.new
+rm "${PIHOLE_LOCATION}"/whitelist.new > /dev/null
 cp "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.txt.old 
 # grep -o '^[^#]*' to remove comments and extra lines
 curl -sS https://raw.githubusercontent.com/jplusc/whitehole/master/whitelist.txt | grep -o '^[^#]*' >> "${PIHOLE_LOCATION}"/whitelist.new
@@ -27,11 +27,11 @@ curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/wh
 
 echo -e "Adding domains to whitelist... "
 cat "${PIHOLE_LOCATION}"/whitelist.new >> "${PIHOLE_LOCATION}"/whitelist.txt
-rm "${PIHOLE_LOCATION}"/whitelist.new
+rm "${PIHOLE_LOCATION}"/whitelist.new > /dev/null
 
 echo -e "Removing duplicates... "
 mv "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.tmp && cat "${PIHOLE_LOCATION}"/whitelist.tmp | sort -f -u >> "${PIHOLE_LOCATION}"/whitelist.txt
-rm "${PIHOLE_LOCATION}"/whitelist.tmp
+rm "${PIHOLE_LOCATION}"/whitelist.tmp > /dev/null
 
 echo -e "Pi-hole gravity rebuilding lists. This may take a while... "
 #${GRAVITY_UPDATE_COMMAND} 
