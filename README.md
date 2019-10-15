@@ -3,9 +3,10 @@ auto whitelisting for pi-hole
 
 
 ```
-curl -Ls https://raw.githubusercontent.com/jplusc/whitehole/master/whitehole.sh -o /opt/whitehole.sh
-chmod +x /opt/whitehole.sh
-/opt/whitehole.sh
+cd /opt/
+sudo wget https://raw.githubusercontent.com/jplusc/whitehole/master/whitehole.sh
+sudo chmod +x /opt/whitehole.sh
+sudo /opt/whitehole.sh
 ```
 
 
