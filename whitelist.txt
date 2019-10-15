@@ -1,3 +1,5 @@
+# common whitelisted sites
+#
 # Project home page: https://github.com/jplusc/whitehole
 
 # on BlackJack8's iOSAdblockList
