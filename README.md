@@ -9,6 +9,10 @@ sudo chmod +x /opt/whitehole.sh
 sudo /opt/whitehole.sh
 ```
 
+```
+sudo wget https://raw.githubusercontent.com/jplusc/whitehole/master/whitehole.sh -O /opt/whitehole.sh
+```
+
 
 ```
 cd /opt
