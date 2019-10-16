@@ -4,6 +4,7 @@
 
 # on BlackJack8's iOSAdblockList
 maxcdn.bootstrapcdn.com
+open.spotify.com
 
 # blocked by a few lists, commonly need to whitelist them
 amzn.to
