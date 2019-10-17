@@ -23,6 +23,6 @@ sudo ./whitehole.sh
 
 ```
 sudo nano /etc/crontab
- 00  4  *  * */3 root     /opt/whitehole.sh
+ 00  4  *  * */7 root     /opt/whitehole.sh
  00  3 15  *  *  root     wget https://raw.githubusercontent.com/jplusc/whitehole/master/whitehole.sh -O /opt/whitehole.sh
 ```
