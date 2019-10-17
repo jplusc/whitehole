@@ -15,29 +15,29 @@
 # these are the default for a Raspbian install of pi-hole on a pi
 PIHOLE_LOCATION="/etc/pihole"
 GRAVITY_UPDATE_COMMAND="pihole -g"
+#✓
 
 
-
-echo -e "Downloading new whitelists.... "
+echo -e "  [ ] Downloading new whitelists.... "
 rm "${PIHOLE_LOCATION}"/whitelist.new 2> /dev/null
 cp "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.txt.old 
 # grep -o '^[^#]*' to remove comments and extra lines
 curl -sS https://raw.githubusercontent.com/jplusc/whitehole/master/whitelist.txt | grep -o '^[^#]*' >> "${PIHOLE_LOCATION}"/whitelist.new
 curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | grep -o '^[^#]*' >> "${PIHOLE_LOCATION}"/whitelist.new
 
-echo -e "Adding domains to whitelist... "
+echo -e "  [ ] Adding domains to whitelist... "
 cat "${PIHOLE_LOCATION}"/whitelist.new >> "${PIHOLE_LOCATION}"/whitelist.txt
 rm "${PIHOLE_LOCATION}"/whitelist.new 2> /dev/null
 
-echo -e "Removing duplicates... "
+echo -e "  [ ] Removing duplicates... "
 mv "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.tmp && cat "${PIHOLE_LOCATION}"/whitelist.tmp | sort -f -u >> "${PIHOLE_LOCATION}"/whitelist.txt
 rm "${PIHOLE_LOCATION}"/whitelist.tmp 2> /dev/null
 
-echo -e "Pi-hole gravity rebuilding lists. This may take a while... "
+echo -e "  [ ] Pi-hole gravity rebuilding lists. This may take a while... "
 ${GRAVITY_UPDATE_COMMAND} 
  
-echo -e "Pi-hole's gravity updated. "
-echo -e "Done. "
+echo -e "  [ ] Pi-hole's gravity updated. "
+echo -e "  [✓] Done. "
 
 
 
