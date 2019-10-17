@@ -34,7 +34,7 @@ mv "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.tmp && cat 
 rm "${PIHOLE_LOCATION}"/whitelist.tmp 2> /dev/null
 
 echo -e "Pi-hole gravity rebuilding lists. This may take a while... "
-#${GRAVITY_UPDATE_COMMAND} 
+${GRAVITY_UPDATE_COMMAND} 
  
 echo -e "Pi-hole's gravity updated. "
 echo -e "Done. "
