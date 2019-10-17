@@ -11,3 +11,6 @@ cdn.jsdelivr.net
 amzn.to
 t.co
 
+# user requests
+gleam.io
+thepiratebay.org
