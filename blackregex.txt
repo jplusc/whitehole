@@ -1,0 +1,6 @@
+#/etc/pihole/regex.list
+
+#Apple News ads
+.+comscoreresearch.+
+
+
