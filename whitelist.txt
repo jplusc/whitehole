@@ -10,7 +10,14 @@ cdn.jsdelivr.net
 # blocked by a few lists, commonly need to whitelist them
 amzn.to
 t.co
+ocsp.apple.com #for apples certificate checking
+
 
 # user requests
 gleam.io
 thepiratebay.org
+
+
+
+
+
