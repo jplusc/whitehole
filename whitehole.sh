@@ -31,7 +31,8 @@ rm "${PIHOLE_LOCATION}"/whitelist.new 2> /dev/null
 
 echo -e "  [ ] Removing duplicates... "
 mv "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.tmp 
-cat "${PIHOLE_LOCATION}"/whitelist.tmp | sort -f -u >> "${PIHOLE_LOCATION}"/whitelist.txt
+#cat "${PIHOLE_LOCATION}"/whitelist.tmp | sort -f -u >> "${PIHOLE_LOCATION}"/whitelist.txt
+cat "${PIHOLE_LOCATION}"/whitelist.tmp | sort -f -u | tee -a "${PIHOLE_LOCATION}"/whitelist.txt > /dev/null
 rm "${PIHOLE_LOCATION}"/whitelist.tmp 2> /dev/null
 
 echo -e "  [ ] Pi-hole gravity rebuilding lists. This may take a while... "
