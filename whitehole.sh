@@ -31,8 +31,11 @@ rm "${PIHOLE_LOCATION}"/whitelist.new 2> /dev/null
 
 echo -e "  [ ] Removing duplicates... "
 mv "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.tmp 
-#cat "${PIHOLE_LOCATION}"/whitelist.tmp | sort -f -u >> "${PIHOLE_LOCATION}"/whitelist.txt
-cat "${PIHOLE_LOCATION}"/whitelist.tmp | sort -f -u | tee -a "${PIHOLE_LOCATION}"/whitelist.txt > /dev/null
+# the "awk '{$1=$1;print}'" is to remove any leading or trailing whitespace so the will be properly de-duped.
+# I don't fully understand why the tee is needed, but I can't get permission to write to whitelist.txt on output of
+# sort even if I toss a sudo before it (which I don't want to do anyway)
+#cat "${PIHOLE_LOCATION}"/whitelist.tmp | awk '{$1=$1;print}' | sort -f -u > "${PIHOLE_LOCATION}"/whitelist.txt
+cat "${PIHOLE_LOCATION}"/whitelist.tmp | awk '{$1=$1;print}' | sort -f -u | tee -a "${PIHOLE_LOCATION}"/whitelist.txt > /dev/null
 rm "${PIHOLE_LOCATION}"/whitelist.tmp 2> /dev/null
 
 echo -e "  [ ] Pi-hole gravity rebuilding lists. This may take a while... "
