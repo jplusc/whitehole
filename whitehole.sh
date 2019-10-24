@@ -22,8 +22,10 @@ echo -e "  [ ] Downloading new whitelists.... "
 rm "${PIHOLE_LOCATION}"/whitelist.new 2> /dev/null
 cp "${PIHOLE_LOCATION}"/whitelist.txt "${PIHOLE_LOCATION}"/whitelist.txt.old 
 # grep -o '^[^#]*' to remove comments and extra lines
-curl -sS https://raw.githubusercontent.com/jplusc/whitehole/master/whitelist.txt | grep -o '^[^#]*' >> "${PIHOLE_LOCATION}"/whitelist.new
-curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | grep -o '^[^#]*' >> "${PIHOLE_LOCATION}"/whitelist.new
+#curl -sS https://raw.githubusercontent.com/jplusc/whitehole/master/whitelist.txt | grep -o '^[^#]*' >> "${PIHOLE_LOCATION}"/whitelist.new
+curl -sS https://raw.githubusercontent.com/jplusc/whitehole/master/whitelist.txt | grep -o '^[^#]*' | tee -a "${PIHOLE_LOCATION}"/whitelist.new > /dev/null
+#curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | grep -o '^[^#]*' >> "${PIHOLE_LOCATION}"/whitelist.new
+curl -sS https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt | grep -o '^[^#]*' | tee -a "${PIHOLE_LOCATION}"/whitelist.new > /dev/null
 
 echo -e "  [ ] Adding domains to whitelist... "
 # I don't fully understand why the tee is needed, but I can't get permission to write to whitelist.txt on output of
