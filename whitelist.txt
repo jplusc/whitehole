@@ -18,6 +18,12 @@ gleam.io
 thepiratebay.org
 
 
+# not sure why web of trust is blocked by StevenBlack
+mywot.com
+www.mywot.com
+
+
+
 
 
 
