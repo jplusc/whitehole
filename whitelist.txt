@@ -17,6 +17,7 @@ ocsp.apple.com #for apples certificate checking
 gleam.io
 thepiratebay.org
 rarbg.to
+ipinfo.io #used for geolocating api
 
 
 # not sure why web of trust is blocked by StevenBlack
