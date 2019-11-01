@@ -16,6 +16,7 @@ ocsp.apple.com #for apples certificate checking
 # user requests
 gleam.io
 thepiratebay.org
+rarbg.to
 
 
 # not sure why web of trust is blocked by StevenBlack
