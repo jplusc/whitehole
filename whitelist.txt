@@ -18,7 +18,7 @@ gleam.io
 thepiratebay.org
 rarbg.to
 ipinfo.io #used for geolocating api
-
+analytics.google.com #i know, but needed for managment of domains that use it
 
 # not sure why web of trust is blocked by StevenBlack
 mywot.com
