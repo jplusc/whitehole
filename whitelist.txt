@@ -12,6 +12,8 @@ amzn.to
 t.co
 ocsp.apple.com #for apples certificate checking
 
+# needed by zulily vendor portal
+static.zdassets.com
 
 # user requests
 tracking.epicgames.com  # required by epic games launcher
