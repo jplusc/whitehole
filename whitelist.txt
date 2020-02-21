@@ -24,12 +24,10 @@ ipinfo.io               # used for geolocating api
 analytics.google.com    # i know, but needed for managment of domains that use it
 
 
-# not sure why web of trust is blocked by StevenBlack
-mywot.com
-www.mywot.com
-
-# not malware
-bugmenot.com
+# not sure why these are blocked
+mywot.com      # StevenBlack list
+www.mywot.com  # StevenBlack list
+bugmenot.com   # malware list
 
 
 
