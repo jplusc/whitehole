@@ -28,7 +28,8 @@ analytics.google.com    # i know, but needed for managment of domains that use i
 mywot.com
 www.mywot.com
 
-
+# not malware
+bugmenot.com
 
 
 
