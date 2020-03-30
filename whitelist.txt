@@ -23,6 +23,7 @@ rarbg.to
 ipinfo.io               # used for geolocating api
 analytics.google.com    # i know, but needed for managment of domains that use it
 
+forms.gle # blocked on phising lists, but needed by schoolwork
 
 # not sure why these are blocked
 mywot.com      # StevenBlack list
