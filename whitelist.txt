@@ -23,7 +23,9 @@ rarbg.to
 ipinfo.io               # used for geolocating api
 analytics.google.com    # i know, but needed for managment of domains that use it
 
+# schoolwork:
 forms.gle # blocked on phising lists, but needed by schoolwork
+e7815.a.akamaiedge.net # my.hrw.com is hosted here
 
 # not sure why these are blocked
 mywot.com      # StevenBlack list
