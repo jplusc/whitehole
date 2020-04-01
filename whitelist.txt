@@ -25,7 +25,7 @@ analytics.google.com    # i know, but needed for managment of domains that use i
 
 # schoolwork:
 forms.gle # blocked on phising lists, but needed by schoolwork
-e7815.a.akamaiedge.net # my.hrw.com is hosted here
+my.hrw.com # hosted on akamaiedge.net and edgekey.net so needs whitelisted so it goes thru
 
 # not sure why these are blocked
 mywot.com      # StevenBlack list
