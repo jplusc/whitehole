@@ -28,10 +28,10 @@ forms.gle # blocked on phising lists, but needed by schoolwork
 my.hrw.com # hosted on akamaiedge.net and edgekey.net so needs whitelisted so it goes thru
 
 # not sure why these are blocked
-mywot.com      # StevenBlack list
-www.mywot.com  # StevenBlack list
-bugmenot.com   # malware list
-
+mywot.com       # StevenBlack list
+www.mywot.com   # StevenBlack list
+bugmenot.com    # malware list
+track.toggl.com # time tracking app
 
 
 
