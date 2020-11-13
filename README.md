@@ -1,5 +1,6 @@
 # whitehole
 auto whitelisting for pi-hole
+** note, this is obsolete, needs updated for pi-hole v5 -- only works with pi-hole v4 atm.
 
 
 ```
