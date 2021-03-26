@@ -16,6 +16,7 @@ ocsp.apple.com #for apples certificate checking
 static.zdassets.com
 
 # user requests
+localendar.com
 tracking.epicgames.com  # required by epic games launcher
 gleam.io
 thepiratebay.org
