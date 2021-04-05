@@ -17,6 +17,7 @@ static.zdassets.com
 
 # user requests
 localendar.com
+click.redditmail.com
 tracking.epicgames.com  # required by epic games launcher
 gleam.io
 thepiratebay.org
