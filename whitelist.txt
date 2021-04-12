@@ -24,6 +24,7 @@ thepiratebay.org
 rarbg.to
 ipinfo.io               # used for geolocating api
 analytics.google.com    # i know, but needed for managment of domains that use it
+mailchimp.com
 
 # schoolwork:
 forms.gle # blocked on phising lists, but needed by schoolwork
