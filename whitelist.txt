@@ -16,6 +16,7 @@ ocsp.apple.com #for apples certificate checking
 static.zdassets.com
 
 # user requests
+www.googleadservices.com
 localendar.com
 click.redditmail.com
 tracking.epicgames.com  # required by epic games launcher
