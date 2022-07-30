@@ -27,6 +27,7 @@ ipinfo.io               # used for geolocating api
 analytics.google.com    # i know, but needed for managment of domains that use it
 mailchimp.com
 caesars.demdex.net      # cant book room otherwise
+mandrillapp.com         # used by planet fitness
 
 # schoolwork:
 forms.gle # blocked on phising lists, but needed by schoolwork
